@@ -2,19 +2,23 @@ from imdb import Cinemagoer
 
 ia = Cinemagoer()
 
-movie = ia.get_movie('0133093')
+movies = ia.search_movie('minions')
 
-res = ia.search_person('Liam Neeson')
+minions = ia.get_movie(movies[0].movieID)
 
-print(res)
+print(minions['plot'])
 
-print('Directors:')
-for director in movie['directors']:
-    print(director['name'])
+# res = ia.search_person('Liam Neeson')
 
-print('Genres:')
-for genre in movie['genres']:
-    print(genre)
+# print(res)
+
+# print('Directors:')
+# for director in movie['directors']:
+#     print(director['name'])
+
+# print('Genres:')
+# for genre in movie['genres']:
+#     print(genre)
 
 people = ia.search_person('Mel Gibson')
 
