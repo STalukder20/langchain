@@ -20,7 +20,7 @@ print(minions['plot'])
 # for genre in movie['genres']:
 #     print(genre)
 
-people = ia.search_person('Mel Gibson')
+# people = ia.search_person('Mel Gibson')
 
-for person in people:
-    print(person.personID, person['name'])
+# for person in people:
+#     print(person.personID, person['name'])
