@@ -2,7 +2,7 @@
 from langchain.pydantic_v1 import BaseModel, Field
 from imdb import Cinemagoer
 
-from libs.langchain.langchain.tools.base import BaseTool
+from langchain.tools.base import BaseTool
 
 class PlotOfMovieSchema(BaseModel):
     """Schema for the PlotOfMovie tool."""
@@ -21,7 +21,7 @@ class PlotOfMovie(BaseTool):
 
     name: str = "PlotOfMovie"
     description: str = (
-        "Use this tool to retrieve a summary of the plot of a movie, given its title."
+        "Use this tool to retrieve a summary of the plot of a movie, given its IMDB movie ID."
     )
 
     def _run(self, movieId: str):

@@ -66,6 +66,10 @@ from langchain.tools.google_serper.tool import GoogleSerperResults, GoogleSerper
 from langchain.tools.graphql.tool import BaseGraphQLTool
 from langchain.tools.human.tool import HumanInputRun
 from langchain.tools.ifttt import IFTTTWebhook
+from langchain.tools.imdb import (
+    CastOfMovie,
+    PlotOfMovie,
+)
 from langchain.tools.interaction.tool import StdInInquireTool
 from langchain.tools.jira.tool import JiraAction
 from langchain.tools.json.tool import JsonGetValueTool, JsonListKeysTool
@@ -154,6 +158,7 @@ __all__ = [
     "BingSearchResults",
     "BingSearchRun",
     "BraveSearch",
+    "CastOfMovie",
     "ClickTool",
     "CopyFileTool",
     "CurrentWebPageTool",
@@ -207,6 +212,7 @@ __all__ = [
     "authenticate",
     "OpenAPISpec",
     "OpenWeatherMapQueryRun",
+    "PlotOfMovie",
     "PubmedQueryRun",
     "PythonAstREPLTool",
     "PythonREPLTool",
